@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./banner.svg" alt="RoomScope — Real-time intelligence for TikTok LIVE" width="100%"/>
+<img src="../banner.svg" alt="RoomScope — Real-time intelligence for TikTok LIVE" width="100%"/>
 
 <br/>
 
