@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#09090b"/>
+      <stop offset="1" stop-color="#18181b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 150) scale(260)">
+      <stop offset="0" stop-color="#ef4444" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#27272a" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="20" fill="url(#grid)" opacity="0.55"/>
+  <rect width="1200" height="300" rx="20" fill="url(#glow)"/>
+
+  <!-- Logo: magnifier with a live dot -->
+  <g transform="translate(150 70)">
+    <circle cx="70" cy="70" r="58" stroke="#fafafa" stroke-width="18"/>
+    <circle cx="70" cy="70" r="20" fill="#ef4444"/>
+    <circle cx="70" cy="70" r="20" stroke="#ef4444" stroke-width="4" fill="none">
+      <animate attributeName="r" values="20;46;20" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0;0.9" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M113 113L160 160" stroke="#fafafa" stroke-width="18" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="390" y="150" fill="#fafafa" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="84" font-weight="800" letter-spacing="-2">RoomScope</text>
+  <text x="394" y="200" fill="#a1a1aa" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" font-weight="500">Real-time intelligence for TikTok LIVE</text>
+
+  <!-- LIVE pill -->
+  <g transform="translate(394 228)">
+    <rect width="92" height="32" rx="16" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-opacity="0.6"/>
+    <circle cx="20" cy="16" r="5" fill="#ef4444">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="22" fill="#fca5a5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">LIVE</text>
+  </g>
+  <text x="502" y="250" fill="#71717a" font-family="'JetBrains Mono', Menlo, Consolas, monospace" font-size="16">gifts · chat · viewers · rankings · alerts</text>
+</svg>
