@@ -131,6 +131,11 @@ feature branch  ──PR──▶  develop  ──auto release──▶  main  �
 - `main` is production and only moves through the release workflow.
 - Port behaviour, not code: every rule from the old system ships with its tests.
 
+## 📩 Contact:
+
+- Email: `tuantq.itwork@gmail.com`
+- Telegram: `@twain_tran`
+
 ---
 
 <div align="center">
