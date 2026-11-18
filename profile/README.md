@@ -123,7 +123,7 @@ flowchart LR
 | 🔁 | **Phase A** | Rebuild the core product: accounts, workspaces, billing, ingestion, alerts, rankings, history, dashboard, website, ops admin | ✅ Shipped |
 | 🚀 | **Phase B** | Gifter intelligence, extended alerts and rankings, creator analytics, host CRM, agency directory | 🟢 Mostly shipped |
 | 🎉 | **Launch** | Production release as toktokdata.live | ✅ Live since 2026-11-17 |
-| 🧰 | **Developers** | SDKs (TypeScript, Python, Go), MCP server, samples in 8 languages | 🟡 In progress |
+| 🧰 | **Developers** | SDKs (TypeScript, Python, Go), MCP server, samples in 8 languages | ✅ v0.1.0 published |
 
 ## 🤝 How we work
 
