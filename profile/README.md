@@ -91,7 +91,7 @@ flowchart LR
 | 🖥️ **[mkdashboard](https://github.com/MKK-Platform/mkdashboard)** | Customer app and ops admin | Next.js 16 · React 19 · Tailwind 4 |
 | 🌐 **[mkwebsite](https://github.com/MKK-Platform/mkwebsite)** | Marketing site, public showroom, CMS | Payload CMS 3 · Next.js 16 · shadcn/ui |
 | 🚢 **[mkdevops](https://github.com/MKK-Platform/mkdevops)** | Compose stacks, proxy, deploy scripts, monitoring | Docker Compose · Traefik · just |
-| 🧰 **[toktokdata-sdks](https://github.com/MKK-Platform/toktokdata-sdks)** | Public SDKs, MCP server and code samples for the API (opening soon) | TypeScript · Python · Go · MCP |
+| 🧰 **[toktokdata-sdks](https://github.com/MKK-Platform/toktokdata-sdks)** | Public SDKs, MCP server and code samples for the API (public) | TypeScript · Python · Go · MCP |
 
 > [!NOTE]
 > Most repositories are private. Ask an owner for access if you are joining the team.
