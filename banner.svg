@@ -29,7 +29,7 @@
   </g>
 
   <!-- Wordmark -->
-  <text x="390" y="150" fill="#fafafa" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="84" font-weight="800" letter-spacing="-2">RoomScope</text>
+  <text x="390" y="150" fill="#fafafa" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-2">toktokdata.live</text>
   <text x="394" y="200" fill="#a1a1aa" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" font-weight="500">Real-time intelligence for TikTok LIVE</text>
 
   <!-- LIVE pill -->

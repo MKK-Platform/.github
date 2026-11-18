@@ -1,11 +1,12 @@
 <div align="center">
 
-<img src="../banner.svg" alt="RoomScope — Real-time intelligence for TikTok LIVE" width="100%"/>
+<img src="../banner.svg" alt="toktokdata.live — Real-time intelligence for TikTok LIVE" width="100%"/>
 
 <br/>
 
-[![Website](https://img.shields.io/badge/roomscope.io-18181b?style=for-the-badge&logo=googlechrome&logoColor=white)](https://roomscope.io)
-[![Status](https://img.shields.io/badge/status-rebuilding-ef4444?style=for-the-badge)](#-roadmap)
+[![Website](https://img.shields.io/badge/toktokdata.live-18181b?style=for-the-badge&logo=googlechrome&logoColor=white)](https://toktokdata.live)
+[![Docs](https://img.shields.io/badge/API_docs-27272a?style=for-the-badge&logo=readthedocs&logoColor=white)](https://toktokdata.live/docs)
+[![Status](https://img.shields.io/badge/status-live-22c55e?style=for-the-badge)](#-roadmap)
 [![Stack](https://img.shields.io/badge/Django%20%C2%B7%20Next.js%20%C2%B7%20Postgres-27272a?style=for-the-badge)](#-tech-stack)
 
 **We watch thousands of TikTok LIVE rooms at once, so creators, agencies and brands don't have to.**
@@ -14,9 +15,9 @@
 
 ---
 
-## 🔴 What is RoomScope?
+## 🔴 What is toktokdata.live?
 
-RoomScope is a SaaS platform that turns TikTok LIVE into data you can act on. It tracks who is live, listens to each room in real time, and turns gifts, chat and viewer counts into alerts, rankings and reports.
+[toktokdata.live](https://toktokdata.live) is a SaaS platform that turns TikTok LIVE into data you can act on. It tracks who is live, listens to each room in real time, and turns gifts, chat and viewer counts into alerts, rankings and reports.
 
 <table>
 <tr>
@@ -29,7 +30,7 @@ Knows which creators are live right now and connects to their rooms to capture e
 <td width="50%" valign="top">
 
 ### 🔔 Instant alerts
-Rule-based notifications on Telegram the moment a creator goes live, a big gift lands or a watched gifter shows up.
+Rule-based notifications on Telegram, Discord, Zalo, email, in-app or your own webhook the moment a creator goes live, a big gift lands or a watched gifter shows up.
 
 </td>
 </tr>
@@ -51,13 +52,13 @@ Host rosters, watchlists, live history and performance per creator, so agencies 
 <td width="50%" valign="top">
 
 ### 📊 Analytics & exports
-Session history, gift and gifter rollups, best time to go live, CSV exports and outbound webhooks.
+Session history and per-minute timelines, gift and gifter rollups, best time to go live, CSV and Excel exports.
 
 </td>
 <td width="50%" valign="top">
 
 ### 🔑 Built for teams
-Workspaces, member invites, API keys, usage-based credits and self-serve billing.
+Workspaces, member invites, scoped API keys, usage-based credits, self-serve billing and a public REST API with SDKs.
 
 </td>
 </tr>
@@ -74,10 +75,11 @@ flowchart LR
     BUS --> NOTI["Alerts"]
     HIST --> DB[("PostgreSQL")]
     RANK --> DB
-    NOTI -->|Telegram| USER(("Customers"))
+    NOTI -->|Telegram · Discord · Zalo · webhooks| USER(("Customers"))
     DB --> API["REST API"]
-    API --> APP["Dashboard<br/>app.roomscope.io"]
-    API --> WEB["Website<br/>roomscope.io"]
+    API --> APP["Dashboard<br/>app.toktokdata.live"]
+    API --> WEB["Website<br/>toktokdata.live"]
+    API --> DEV["SDKs · MCP<br/>api.toktokdata.live"]
 ```
 
 ## 📦 Repositories
@@ -89,6 +91,7 @@ flowchart LR
 | 🖥️ **[mkdashboard](https://github.com/MKK-Platform/mkdashboard)** | Customer app and ops admin | Next.js 16 · React 19 · Tailwind 4 |
 | 🌐 **[mkwebsite](https://github.com/MKK-Platform/mkwebsite)** | Marketing site, public showroom, CMS | Payload CMS 3 · Next.js 16 · shadcn/ui |
 | 🚢 **[mkdevops](https://github.com/MKK-Platform/mkdevops)** | Compose stacks, proxy, deploy scripts, monitoring | Docker Compose · Traefik · just |
+| 🧰 **[toktokdata-sdks](https://github.com/MKK-Platform/toktokdata-sdks)** | Public SDKs, MCP server and code samples for the API (opening soon) | TypeScript · Python · Go · MCP |
 
 > [!NOTE]
 > Most repositories are private. Ask an owner for access if you are joining the team.
@@ -117,18 +120,19 @@ flowchart LR
 | | Phase | Scope | Status |
 |:-:|---|---|:-:|
 | 🧱 | **Foundations** | Local stack, CI, app skeletons, branding | ✅ Done |
-| 🔁 | **Phase A** | Rebuild the core product: accounts, workspaces, billing, ingestion, alerts, rankings, history, dashboard, website, ops admin | 🟢 Nearly done |
-| 🚀 | **Phase B** | Gifter intelligence, extended alerts and rankings, creator analytics, host CRM, agency directory | 🟡 In progress |
-| 🎉 | **Launch** | Production release as RoomScope | ⏳ Next |
+| 🔁 | **Phase A** | Rebuild the core product: accounts, workspaces, billing, ingestion, alerts, rankings, history, dashboard, website, ops admin | ✅ Shipped |
+| 🚀 | **Phase B** | Gifter intelligence, extended alerts and rankings, creator analytics, host CRM, agency directory | 🟢 Mostly shipped |
+| 🎉 | **Launch** | Production release as toktokdata.live | ✅ Live since 2026-11-17 |
+| 🧰 | **Developers** | SDKs (TypeScript, Python, Go), MCP server, samples in 8 languages | 🟡 In progress |
 
 ## 🤝 How we work
 
 ```text
-feature branch  ──PR──▶  develop  ──auto release──▶  main  ──▶  production
+feature branch  ──PR──▶  develop  ──release (by hand)──▶  main  ──▶  production
 ```
 
 - One issue, one branch (`<type>/<N>-<slug>`), one squash-merged PR into `develop`.
-- `main` is production and only moves through the release workflow.
+- `main` is production and only moves when an owner runs the release workflow.
 - Port behaviour, not code: every rule from the old system ships with its tests.
 
 ## 📩 Contact:
@@ -140,6 +144,6 @@ feature branch  ──PR──▶  develop  ──auto release──▶  main  �
 
 <div align="center">
 
-<sub>Made with ❤️ by the MKK Platform team · RoomScope is not affiliated with TikTok or ByteDance.</sub>
+<sub>Made with ❤️ by the MKK Platform team · toktokdata.live is not affiliated with TikTok or ByteDance.</sub>
 
 </div>
